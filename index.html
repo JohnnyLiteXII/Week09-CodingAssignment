@@ -1,0 +1,156 @@
+<!-- Copyright (c) 2023 Promineo Tech 
+
+Author:  Juan Mejia
+
+Week 9 - Coding Assignment
+
+----------------------------------------------------
+
+Coding Steps:
+-Create a new website using HTML and Bootstrap. The website must include the following:
+    - At least 2 pages.
+    - A Bootstrap navbar, table, and form.
+    - Bootstrap grid used throughout to format elements
+        - Elements should stack vertically when the window is small
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>British Shorthair Cats</title>
+
+    <!-- Including Bootstrap CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"
+</head>
+<body class="container">
+
+
+
+    <!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">British Shorthair Cats</a>
+
+    <!-- Navbar Toggler for Small Screens -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" 
+    aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only"></span> </a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarMenuDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarMenuDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+</nav>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+<!-- Main Content Container -->
+<div class="container mt-4 bg-gradient">
+    <!-- Introduction Section -->
+    <h1 class="text-center mb-4 fs-1">Welcome to the World of British Shorthair Cats</h1>
+    <p>This website provides information about British Shorthair cats, including their different colors, types, and images.
+The British Shorthair originated in city streets around Britain in the 19th century. A man named Harrison Weir is credited with the creation of the breed we see today. He was very fond of the cat and selected the strongest ones he could find and began to breed them.
+
+In the 1890s, however, due to the importation of Persian Cats and other exotic breeds, the Shorthair dropped in popularity almost to the point of extinction. Modern British Shorthairs may share Persian or Russian Blue DNA having been bred with them to help the breed survive.
+
+The breed was first recognised by the Cat Fanciers Association and The International Cat Association by the late 1970s and as of 2013 it is ranked as the 5th most popular cat breed in the US.
+    </p>
+
+    <!-- Colors and Types Table -->
+    <h2 class="text-center mb-4 fs-1">Colors and Types</h2>
+    <p>British Shorthair cats come in various colors and types, such as:</p>
+    <table class="table table-light table-hover">
+    <thead>
+        <tr>
+        <th style="text-align: center;">Color</th>
+        <th style="text-align: center;">Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td style="text-align: center;">Blue</td>
+        <td style="text-align: center;">Classic</td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">Cream</td>
+        <td style="text-align: center;">Spotted</td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">Black</td>
+        <td style="text-align: center;">Tipped</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <!-- Cat Images -->
+<h2>Images</h2>
+
+<div class="container text-center mb-5 fs-2">   
+<div class="row">
+
+    <div class="col-md-4">
+        
+                <div id="cat1" class="card bg-secondary">
+                <img src="/images/cat1.jpg" class="card-image-top" alt="British Shorthair Cat 1" >
+                    <div class="card-body">
+                        <h5 class="card-title">Golden Blue</h5>
+                        <a href="#" class="btn btn-lg btn-outline-info">More Info</a>
+                    </div>
+            </div>
+        
+    </div>
+
+    <div class="col-md-4">
+        
+            <div id="cat2" class="card bg-secondary">   
+            <img src="/images/cat2.jpg" class="card-img-top" alt="British Shorthair Cat 2">
+                <div class="card-body">
+                <h5 class="card-title">Mix colors</h5>
+                <a href="#" class="btn btn-lg btn-outline-info">More Info</a>
+                </div>
+            </div>
+        
+    </div>
+
+    <div class="col-md-4">
+        
+            <div id="cat3" class="card bg-secondary">
+            <img src="/images/cat3.jpg" class="card-img-top" alt="British Shorthair Cat 3" >
+                <div class="card-body">
+                <h5 class="card-title">Long Hair Cat</h5>
+                <a href="#" class="btn btn-lg btn-outline-info">More Info</a>
+                </div>
+            </div>
+        
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>

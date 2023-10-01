@@ -1,0 +1,96 @@
+<!-- Copyright (c) 2023 Promineo Tech 
+
+Author:  Juan Mejia
+
+Week 9 - Coding Assignment
+
+----------------------------------------------------
+
+Coding Steps:
+-Create a new website using HTML and Bootstrap. The website must include the following:
+    - At least 2 pages.
+    - A Bootstrap navbar, table, and form.
+    - Bootstrap grid used throughout to format elements
+        - Elements should stack vertically when the window is small
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>British Shorthair Cats</title>
+
+    <!-- Including Bootstrap CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"
+</head>
+
+<!-- SECTION 1-->
+<body class="container">
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">British Shorthair Cats</a>
+
+    <!-- Navbar Toggler for Small Screens -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only"></span> </a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="index.html">Home</a>
+            <a class="dropdown-item" href="about.html">About</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+</nav>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    
+    <!-- Main Content Container -->
+    <div class="container mt-4">
+    <!-- About Us Section -->
+    <h1>About Us</h1>
+    <p>We are passionate cat lovers who run this website dedicated to British Shorthair cats. Feel free to contact us for any inquiries.</p>
+    
+    <!-- Contact Form -->
+    <h2>Contact Us</h2>
+    <form>
+        <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+    
